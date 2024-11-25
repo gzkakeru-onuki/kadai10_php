@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Anton rel=" stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-logo">
+            <h1><a href="index.php">SnapPhoto</a></h1>
+        </div>
+        <div>
+            <ul style="list-style: none;">
+                <li class="header-item">Photos</li>
+                <li class="header-item">Profile</li>
+            </ul>
+        </div>
+    </div>
+    <div class="title-container">
+        <h2 class="title">SnapPhoto</h2>
+        <p class="subtitle">人生の一瞬の喜びをみんなと共有しよう！</p>
+    </div>
+
+    <!-- モーダルを開いた時の外側のレイヤー -->
+    <div class="over-lay"></div>
+
+    <div class="wrapper">
+        <!--   モーダルを開くボタン -->
+        <button class="modal-open-btn servBtn">
+            +
+        </button>
+        <!--   モーダルウィンドウ -->
+        <div class="modal">
+            
+            <form action="post.php" method="post" enctype="multipart/form-data">
+                <label for="upload" class="uploadlabel">画像を選択</label>
+                <input style="display: none;" type="file" name="image" required id="upload"><br>
+                <textarea class="caption" name="caption" placeholder="キャプションを入力"></textarea><br>
+                <button class="submitBtn" type="submit">投稿</button>
+                <button class="modal-close-btn">閉じる</button>
+            </form>
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="form-container" style="display: none;">
+        <form action="post.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" required>
+            <textarea name="caption" placeholder="キャプションを入力"></textarea>
+            <button type="submit">投稿</button>
+        </form>
+    </div>
+
+    <div class="post-container" style="overflow: auto; height: 600px;">
+        <div class="posts">
+            <img src="uploads/understand.png">
+            <p>testcaption</p><br>
+            <button><a href="./edit.php?id=6">編集</a></button><br>
+        </div>
+        <div class="posts">
+            <img src="uploads/understand.png">
+            <p>testcaption</p><br>
+            <button><a href="./edit.php?id=6">編集</a></button><br>
+        </div>
+        <div class="posts">
+            <img src="uploads/understand.png">
+            <p>testcaption</p><br>
+            <button><a href="./edit.php?id=6">編集</a></button><br>
+        </div>
+        <div class="posts">
+            <img src="uploads/understand.png">
+            <p>testcaption</p><br>
+            <button><a href="./edit.php?id=6">編集</a></button><br>
+        </div>
+        <div class="posts">
+            <img src="uploads/understand.png">
+            <p>testcaption</p><br>
+            <button><a href="./edit.php?id=6">編集</a></button><br>
+        </div>
+        <div class="posts">
+            <img src="uploads/understand.png">
+            <p>testcaption</p>
+            <button><a href="./edit.php?id=6">編集</a></button>
+        </div>
+        <div class="posts">
+            <img src="uploads/understand.png">
+            <p>testcaption</p>
+            <button><a href="./edit.php?id=6">編集</a></button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-logo">
+            <h1>SnapPhoto.inc</h1>
+        </div>
+        <div class="footer-list">
+            <ul style="list-style: none;">
+                <li class="footer-item">Photos</li>
+                <li class="footer-item">Profile</li>
+
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            // モーダルウィンドウを開くとき
+            $('.modal-open-btn').on('click', function () {
+                $('.modal, .over-lay').addClass('active');
+            });
+
+            // モーダルウィンドウを閉じるとき
+            $('.modal-close-btn, .over-lay').on('click', function () {
+                $('.modal, .over-lay').removeClass('active');
+            });
+        });
+
+    </script>
+</body>
+
+</html>

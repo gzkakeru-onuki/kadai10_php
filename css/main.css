@@ -1,0 +1,388 @@
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    object-fit: cover;
+    background-size: cover;
+    background-color: whitesmoke;
+}
+
+.header {
+    margin-top: -20px;
+    height: 120px;
+    background-color: antiquewhite;
+
+}
+
+.header-img {
+    height: 80px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-logo {
+    float: left;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+.header-item {
+    list-style: none;
+    float: right;
+    padding: 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.title {
+    padding-top: 10px;
+    color: #2b4850;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.form-container {
+    text-align: center;
+}
+
+.form-item {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.form-label {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.form-input {
+    background-color: antiquewhite;
+    border: 1px solid bisque;
+    border-radius: 18px;
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+}
+
+.form-input:hover {
+    transition: 0.5s;
+    background-color: orange;
+
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.submit-Btn {
+    background-color: whitesmoke;
+    width: 250px;
+    border-radius: 18px;
+    border: 3px solid lightcoral;
+    height: 40px;
+    box-shadow: 1px 1px 1px 1px slategray;
+}
+
+.submit-Btn:hover {
+    background-color: lightcoral;
+    transform: translateY(3px);
+    transition: 0.5s;
+    box-shadow: 1px 1px 1px gray;
+    cursor: pointer;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.link-Btn {
+    text-decoration: none;
+    color: black;
+    border: 3px solid lightcoral;
+    border-radius: 8px;
+    padding: 5px;
+    margin-left: 10px;
+    box-shadow: 1px 1px 1px 1px gray;
+    cursor: pointer;
+}
+
+.link-Btn:hover {
+    cursor: pointer;
+    background: lightcoral;
+    transition: 0.5s;
+    box-shadow: 1px 1px 1px gray;
+}
+
+.footer {
+    margin-top: 100px;
+    height: 120px;
+    background-color: #2f5167;
+    color: #fff;
+    padding: 40px;
+}
+
+.footer-logo {
+    float: left;
+}
+
+.post-name {
+    width: 150px;
+    background: #ffffff;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 18px;
+    font-weight: bold;
+}
+
+.post-time {
+    width: 150px;
+    background: #ffffff;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 18px;
+}
+
+
+
+.footer-list {
+    margin-top: -25px;
+
+    float: right;
+    font-size: 20px;
+}
+
+.posts {
+    background-color: bisque;
+    width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border:1px solid;
+}
+
+.post-img {
+    width: 100%;
+    /* 幅を枠に合わせる */
+    height: 100%;
+    /* 高さを枠に合わせる */
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.post-container {
+    width: 650px;
+    border: 1px solid black;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 18px;
+    height: 700px;
+    overflow: auto;
+}
+
+.post-caption {
+    width: 80%;
+    text-align: center;
+    font-size: 21px;
+    border-radius: 18px;
+    background-color: #ffffff;
+    margin: 10px auto;
+}
+
+
+.caption {
+    background-color: whitesmoke;
+    border: 1px solid beige;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+
+.caption:hover {
+    background-color: whitesmoke;
+    border: 1px solid beige;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px 0 gray;
+    transition: 0.5s;
+}
+
+
+.edit {
+    text-align: center;
+}
+
+.editBtn {
+    all: unset;
+    background: lightcoral;
+    border-radius: 14px;
+    width: 50px;
+    text-align: center;
+    height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    color: whitesmoke;
+    box-shadow: 1px 1px 1px 1px gray;
+    margin: 15px 0;
+}
+
+.editBtn:hover {
+    box-shadow: 1px 1px 1px gray;
+    background: orange;
+    transform: translateY(3px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.servBtn {
+    all: unset;
+    background: lightcoral;
+    border-radius: 14px;
+    width: 50px;
+    text-align: center;
+    height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    color: whitesmoke;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+
+.servBtn:hover {
+    box-shadow: 1px 1px 1px gray;
+    background: orange;
+    transform: translateY(3px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.submitBtn {
+    all: unset;
+    background: lightcoral;
+    border-radius: 14px;
+    width: 50px;
+    text-align: center;
+    height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    color: whitesmoke;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+
+.submitBtn:hover {
+    box-shadow: 1px 1px 1px gray;
+    background: orange;
+    transform: translateY(3px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+img {
+    width: fit-content;
+    height: fit-content;
+    object-fit: cover;
+}
+
+
+.over-lay {
+    content: '';
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #999;
+    opacity: 0.7;
+}
+
+/* モーダルウィンドウ */
+.modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    width: 80%;
+    padding: 30px;
+    background-color: bisque;
+}
+
+/* モーダルを開いたとき */
+.modal.active,
+.over-lay.active {
+    display: block;
+}
+
+.wrapper {
+    text-align: center;
+    margin-bottom:20px;
+}
+
+.uploadlabel {
+    all: unset;
+    background: lightcoral;
+    border-radius: 4px;
+    width: 70px;
+    text-align: center;
+    height: 40px;
+    font-weight: bold;
+    font-size: 17px;
+    color: whitesmoke;
+    box-shadow: 1px 1px 1px 1px gray;
+    letter-spacing: 2px;
+    padding: 8px;
+}
+
+.uploadlabel:hover {
+    box-shadow: 1px 1px 1px gray;
+    background: orange;
+    transform: translateY(3px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.caption {
+    margin-top: 20px;
+}
+
+.modal-close-btn {
+    all: unset;
+    background: lightcoral;
+    border-radius: 14px;
+    width: 50px;
+    text-align: center;
+    height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    color: whitesmoke;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+
+.modal-close-btn:hover {
+    box-shadow: 1px 1px 1px gray;
+    background: orange;
+    transform: translateY(3px);
+    transition: 0.5s;
+    cursor: pointer;
+}

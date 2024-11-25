@@ -7,7 +7,7 @@
 
 
 ## ③アプリのデプロイURL
-
+https://pioneer-mind.sakura.ne.jp/phpmaster/
 
 ## ④アプリのログイン用IDまたはPassword（ある場合）
 アカウント作成はご自由にどうぞ
